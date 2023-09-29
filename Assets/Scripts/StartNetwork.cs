@@ -9,7 +9,7 @@ public class StartNetwork : MonoBehaviour
     }
     public void StartClient()
     {
-        NetworkManager.Singleton.StartServer();
+        NetworkManager.Singleton.StartClient();
     }
     public void StartHost()
     {
