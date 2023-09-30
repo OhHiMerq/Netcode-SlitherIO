@@ -21,6 +21,7 @@ public class PlayerLength : NetworkBehaviour
 
         if (!IsOwner) return;
         ChangedLengthEvent?.Invoke(length.Value);
+        ClientMusicPlayer.Instance.PlayNomAudioClip();
     }
     private void LengthChangedEvent(ushort previousValue, ushort newValue)
     {
