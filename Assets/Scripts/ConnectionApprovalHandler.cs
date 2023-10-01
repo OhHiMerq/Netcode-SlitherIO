@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConnectionApprovalHandler : MonoBehaviour
 {
-    private const int MaxPlayers = 1;
+    private const int MaxPlayers = 2;
     private void Start()
     {
         NetworkManager.Singleton.ConnectionApprovalCallback = ApprovalCheck;
